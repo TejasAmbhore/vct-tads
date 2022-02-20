@@ -1,0 +1,72 @@
+
+.endgame{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .fireplace{
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .text_endgame{
+    position: relative;
+    top: -80%;
+    background: linear-gradient(
+        to right bottom,
+        rgb(253, 253, 253),
+        rgba(172, 203, 255, 0.2)
+        );
+        border-radius: 10px;
+        padding: 40px;
+        width: 50%;
+        margin-left: 25%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  }
+  
+  /* .contact{
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url("Fireplace.jpg");
+      background-size: cover;
+      color: white;
+    }
+  
+    .contact-p{
+      background: linear-gradient(
+        to right bottom,
+        rgba(100, 158, 255, 1),
+        rgba(172, 203, 255, 0.2)
+        );
+        border-radius: 10px;
+        padding: 40px;
+        width: 75%;
+        margin-left: 15%;
+        
+    }
+  
+    .contact .content-contact{
+      max-width: 800px;
+      text-align: center;
+    }
+    
+    .contact .content-contact p{
+      
+      font-weight: 300;
+      color: #fff;
+    }
+  
+    @media (max-width: 1068px){
+      .contact{
+        padding: 50px;
+      }
+  } */
