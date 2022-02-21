@@ -58,7 +58,7 @@ export default function Chedis() {
       }, 2000);
     }
     else {
-      toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+      toast.error("Are you comedy me....", {
         position: "top-center",
         autoClose: 2000
       });
@@ -66,37 +66,37 @@ export default function Chedis() {
   }
   // eslint-disable-next-line
   const handlewrong1 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Itna Galat Kaise ho sakte ho....", {
       position: "bottom-center",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong2 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Udi  baba... Mera 20 saal ka tajurba mei itna galat kabhi nhi dekha.", {
       position: "top-left",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong3 = () => {
-    toast.error("Tum to Maglu lagte ho bro...", {
+    toast.error("Be Hermione, not be Ron, give a try more bcoz you are wrong", {
       position: "top-right",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong4 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Kacha badaam dada kacha badaam... Galti kar di hai tumnei sanam...", {
       position: "bottom-left",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong5 = () => {
     toast.error("Aise jawab ke liye aapko Hogwarts...jaadu aur tantr ke vidyalaya se nikala jata hai...", {
       position: "bottom-right",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
 

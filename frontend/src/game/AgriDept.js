@@ -59,7 +59,7 @@ export default function AgriDept() {
       }, 2000);
     }
     else {
-      toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+      toast.error("Are you comedy me....", {
         position: "top-center",
         autoClose: 2000
       });
@@ -81,7 +81,7 @@ export default function AgriDept() {
   }
   // eslint-disable-next-line
   const handlewrong3 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Be Hermione, not be Ron, give a try more bcoz you are wrong", {
       position: "top-right",
       autoClose: 3000
     });
@@ -95,9 +95,9 @@ export default function AgriDept() {
   }
   // eslint-disable-next-line
   const handlewrong5 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Aise jawab ke liye aapko Hogwarts...jaadu aur tantr ke vidyalaya se nikala jata hai...", {
       position: "bottom-right",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
 

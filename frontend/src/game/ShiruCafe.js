@@ -47,7 +47,7 @@ export default function ShiruCafe() {
   const navigate = useNavigate();
   const handlecorrect = () => {
     if (userIndex === 5) {
-      toast.success("Right Answer", {
+      toast.success("Kitne tejaswi facche hai hamare pass", {
         position: "top-center",
         autoClose: 1500
       });
@@ -59,7 +59,7 @@ export default function ShiruCafe() {
       }, 2000);
     }
     else {
-      toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+      toast.error("Are you comedy me....", {
         position: "top-center",
         autoClose: 2000
       });
@@ -67,44 +67,46 @@ export default function ShiruCafe() {
   }
   // eslint-disable-next-line
   const handlewrong1 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Itna Galat Kaise ho sakte ho....", {
       position: "bottom-center",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong2 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Udi  baba... Mera 20 saal ka tajurba mei itna galat kabhi nhi dekha.", {
       position: "top-left",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong3 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Be Hermione, not be Ron, give a try more bcoz you are wrong", {
       position: "top-right",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong4 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Kacha badaam dada kacha badaam... Galti kar di hai tumnei sanam...", {
       position: "bottom-left",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
   // eslint-disable-next-line
   const handlewrong5 = () => {
-    toast.error("Lorem ipsum dolorunde sed dignissimos magni minima doloremque praesentium est id! Sunt, eum libero!", {
+    toast.error("Aise jawab ke liye aapko Hogwarts...jaadu aur tantr ke vidyalaya se nikala jata hai...", {
       position: "bottom-right",
-      autoClose: 2000
+      autoClose: 3000
     });
   }
 
 
   return (
     <>
-      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/shiru%20cafe%20horror%20f.png?raw=true"} alt="hii" className='sc' /></LazyLoad>
+      <LazyLoad>
+        <img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/shiru%20cafe%20horror%20f.png?raw=true"} alt="hii" className='sc' />
+      </LazyLoad>
       <div className='backbutton'>
         <h1 className="mx-3">
           <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />
