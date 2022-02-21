@@ -28,12 +28,12 @@ export default function Map() {
         const n1 = json.userRiddleIndex;
         setUserIndex(n1);
     }
-    useEffect(() => {
-        userdeatils();
-        // setTimeout(() => userdeatils(), 2000);
-        // console.log(userIndex)
-        // eslint-disable-next-line
-    }, []);
+    // useEffect(() => {
+    //     userdeatils();
+    //     // setTimeout(() => userdeatils(), 2000);
+    //     // console.log(userIndex)
+    //     // eslint-disable-next-line
+    // }, []);
 
     // -------------------
     const navigate = useNavigate();
@@ -53,11 +53,12 @@ export default function Map() {
     }
     // const [loading, setLoading] = useState(true)
     useEffect(() => {
+        userdeatils();
         riddledeatils();
         // setTimeout(() => riddledeatils(), 1000);
         // setTimeout(() => setLoading(false), 6000)
         // eslint-disable-next-line 
-    }, []);
+    }, [userIndex, riddles]);
 
     // const s = userIndex * 7;
     if (userIndex === 17) {
@@ -202,48 +203,48 @@ export default function Map() {
                                 <p className="img__description">Technology Students Gymkhana</p>
                             </div>
                         </div>
-                        
-                    <div className="img__wrap"><img className="TOAT" id="10Toat" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/toat", { replace: true })} aria-hidden="true" />
-                        <div className="img__description_layer">
-                            <p className="img__description">Tagore Open Air Theater</p>
+
+                        <div className="img__wrap"><img className="TOAT" id="10Toat" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/toat", { replace: true })} aria-hidden="true" />
+                            <div className="img__description_layer">
+                                <p className="img__description">Tagore Open Air Theater</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="img__wrap"><img className="LIBRARY" id="11lib" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/lib", { replace: true })} aria-hidden="true" />
-                        <div className="img__description_layer">
-                            <p className="img__description">Library</p>
+                        <div className="img__wrap"><img className="LIBRARY" id="11lib" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/lib", { replace: true })} aria-hidden="true" />
+                            <div className="img__description_layer">
+                                <p className="img__description">Library</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="img__wrap"><img className="PFC" id="12Pfc" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/pfc", { replace: true })} aria-hidden="true" />
-                        <div className="img__description_layer">
-                            <p className="img__description">PAN Food Center</p>
+                        <div className="img__wrap"><img className="PFC" id="12Pfc" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/pfc", { replace: true })} aria-hidden="true" />
+                            <div className="img__description_layer">
+                                <p className="img__description">PAN Food Center</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="img__wrap"><img className="SBI" id="13Sbi" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/sbi", { replace: true })} aria-hidden="true" />
-                        <div className="img__description_layer">
-                            <p className="img__description">SBI</p>
+                        <div className="img__wrap"><img className="SBI" id="13Sbi" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/sbi", { replace: true })} aria-hidden="true" />
+                            <div className="img__description_layer">
+                                <p className="img__description">SBI</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="img__wrap"><img className="PURI_GATE" id="14puri" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/puri", { replace: true })} aria-hidden="true" />
-                        <div className="img__description_layer">
-                            <p className="img__description">Puri Gate</p>
+                        <div className="img__wrap"><img className="PURI_GATE" id="14puri" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/puri", { replace: true })} aria-hidden="true" />
+                            <div className="img__description_layer">
+                                <p className="img__description">Puri Gate</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="img__wrap"><img className="Chedis" id="15chedis" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/chedis", { replace: true })} aria-hidden="true" />
-                        <div className="img__description_layer">
-                            <p className="img__description">Chedis</p>
+                        <div className="img__wrap"><img className="Chedis" id="15chedis" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/chedis", { replace: true })} aria-hidden="true" />
+                            <div className="img__description_layer">
+                                <p className="img__description">Chedis</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="img__wrap"><img className="Pls" id="16pls" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/pls", { replace: true })} aria-hidden="true" />
-                        <div className="img__description_layer">
-                            <p className="img__description">Professor Lake Side</p>
+                        <div className="img__wrap"><img className="Pls" id="16pls" src={"https://github.com/TAdS-VCT/Media/blob/main/pointer.png?raw=true"} alt="pointer" onClick={() => navigate("/game/pls", { replace: true })} aria-hidden="true" />
+                            <div className="img__description_layer">
+                                <p className="img__description">Professor Lake Side</p>
+                            </div>
                         </div>
-                    </div>
                     </LazyLoad>
                 </div>
-        </Page>
+            </Page>
             {/* ) : (
                 <DataLoader /> */}
-    {/* )} */ }
+            {/* )} */}
         </>
     )
 }
