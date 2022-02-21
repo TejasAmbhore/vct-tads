@@ -31,29 +31,6 @@
     z-index: 2;
 }
 
-.MB .hover {
-    opacity: 0;
-}
-.hover {
-    position: absolute;
-    top: 18.4%;
-    left: 54.4%;
-    width: auto;
-    z-index: 5;
-    font-size: 40px;
-    color: #fff;
-    font-weight: 400;
-    padding: 5px 2px;
-    cursor: pointer;
-    backdrop-filter: blur(6px) saturate(180%);
-  webkit-backdrop-Filter: blur(6px) saturate(180%);
-  background-Color: rgba(155, 155, 155, 0.45);
-  border-Radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
-.MB:hover .hover{
-    opacity: 1;
-}
 
 /* .MAIN_BUILDING:hover {
 
@@ -251,4 +228,37 @@
 .my-modal {
     width: 300px;
     height: 800px;
+}
+
+.img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition effect. not necessary */
+    transition: "opacity .2s", "visibility .2s";
+}
+
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description {
+    transition: .2s;
+    transform: translateY(1em);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.img__wrap:hover .img__description {
+    transform: translateY(0);
 }
