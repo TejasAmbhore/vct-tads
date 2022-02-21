@@ -5,6 +5,7 @@ import { FaChevronCircleLeft } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 // import v1 from "./images/v1.png"
 import "./Chedis.css"
+import LazyLoad from 'react-lazyload';
 
 
 

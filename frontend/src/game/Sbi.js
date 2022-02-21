@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 // import v1 from "./images/v1.png"
 // import Delay from "./Delay.ts";
 import "./Sbi.css"
-
+import LazyLoad from 'react-lazyload';
 
 
 export default function Sbi() {

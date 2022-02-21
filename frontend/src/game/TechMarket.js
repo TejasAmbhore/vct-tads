@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaChevronCircleLeft } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 // import v1 from "./images/v1.png"
+import LazyLoad from 'react-lazyload';
 import "./TechM.css"
 
 
