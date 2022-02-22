@@ -33,26 +33,28 @@ router.post('/createuser', [
         var mailOptions = ({
             from: 'tads.vct2022@gmail.com',
             to: `${email}`,
-            subject: "Hello  from TAdS✔",
+            subject: "VCT INVITATION",
             text: "Hello world?",
-            html: `<h2>Greetings Ms./Mr. ${name}!</h2><br>
-            <h3>We hope that this email finds you in great health. Thank you for accepting the invitation. We welcome you aboard the Hogwarts Express ! The train will leave Platform 9 3/4 in a short while, so kindly be seated.
+            html: `<h4>Greetings Ms./Mr. ${name}!</h4><br>
+            <h4>We hope that this email finds you in great health. Thank you for accepting the invitation. We welcome you aboard the Hogwarts Express ! The train will leave Platform 9 3/4 in a short while, so kindly be seated.
             <br>
             <br>
-            Your boarding pass is <h4><i>${pcode}</i></h4>.
+            Your boarding pass is <h2><i>${pcode}</i></h2>.
             <br>
             <br>
-            Keep the pass secured with you , lest you shall be deported back to your home stations :( . <br>Looking forward to your presence at the Virtual Cycle Trip!</h3>
+            Keep the pass secured with you , lest you shall be deported back to your home stations :( .
+            <br>Looking forward to your presence at the Virtual Cycle Trip!</h3>`,
                 
-            <h4>Thanks and Regards<br>
-            Team Virtual Cycle Trip<br>
-            Technology Adventure Society</h6>`,
+            // <h4>Thanks and Regards<br>
+            // Team Virtual Cycle Trip<br>
+            // Technology Adventure Society</h4>`,
         });
         transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
                 console.log(error, "error in transporter");
             } else {
                 console.log('Email sent: ' + info.response);
+                console.log(mailOptions);
             }
         })
     }
