@@ -39,11 +39,11 @@ router.post('/createuser', [
             <h4>We hope that this email finds you in great health. Thank you for accepting the invitation. We welcome you aboard the Hogwarts Express ! The train will leave Platform 9 3/4 in a short while, so kindly be seated.
             <br>
             <br>
-            Your boarding pass is <h2><i>${pcode}</i></h2>.
+            <h2>Your boarding pass is <i>${pcode}</i></h2>.
             <br>
             <br>
             Keep the pass secured with you , lest you shall be deported back to your home stations :( .
-            <br>Looking forward to your presence at the Virtual Cycle Trip!</h3>`,
+            <br>Looking forward to your presence at the Virtual Cycle Trip!</h4>`,
                 
             // <h4>Thanks and Regards<br>
             // Team Virtual Cycle Trip<br>
