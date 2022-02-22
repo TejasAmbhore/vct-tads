@@ -31,11 +31,14 @@ router.post('/createuser', [
         });
 
         var mailOptions = ({
-            from: 'tads.vct2022@gmail.com',
+            from: {
+                name: "TAdS VCT",
+                address: "tads.vct2022@gmail.com"
+            },
             to: `${email}`,
             subject: "VCT INVITATION",
             text: "Hello world?",
-            html: `<h4>Greetings Ms./Mr. ${name}!</h4><br>
+            html: `<h3>Greetings Ms./Mr. ${name}!</h3><br>
             <h4>We hope that this email finds you in great health. Thank you for accepting the invitation. We welcome you aboard the Hogwarts Express ! The train will leave Platform 9 3/4 in a short while, so kindly be seated.
             <br>
             <br>
@@ -43,11 +46,12 @@ router.post('/createuser', [
             <br>
             <br>
             Keep the pass secured with you , lest you shall be deported back to your home stations :( .
-            <br>Looking forward to your presence at the Virtual Cycle Trip!</h4>`,
-                
-            // <h4>Thanks and Regards<br>
-            // Team Virtual Cycle Trip<br>
-            // Technology Adventure Society</h4>`,
+            <br>Looking forward to your presence at the Virtual Cycle Trip!</h4>
+            <br>
+            <br>
+            <h4>Thanks and Regards<br>
+            Team Virtual Cycle Trip<br>
+            Technology Adventure Society</h4>`,
         });
         transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
