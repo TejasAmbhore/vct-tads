@@ -117,7 +117,7 @@ export default function AppOrderTimeline() {
 
       <Typography className="text-center mb-3" style={{ fontWeight: "600", fontSize: "30px" }}>Instructions and Rules</Typography>
       <Typography className="text my-2" style={{ padding: "10px", fontWeight: "600", fontSize: "20px" }} >
-        1) Please use Desktop.............. <br />
+        1) Please use Desktop/Laptop <br />
         2) Register with a username and your email id. 	<br />
         3) You will get a passcode through the email registered.<br />
         4) Then login using the email id and the passcode.<br />

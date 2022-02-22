@@ -26,6 +26,8 @@ export default function MB() {
   }
   useEffect(() => {
     userdeatils();
+    document.title="TAdS || VCT"
+
     // eslint-disable-next-line
   }, [userIndex, setUserIndex]);
 

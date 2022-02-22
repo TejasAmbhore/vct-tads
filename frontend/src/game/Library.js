@@ -26,7 +26,9 @@ export default function Library() {
   }
   useEffect(() => {
     userdeatils();
+    document.title="TAdS || VCT"
     // eslint-disable-next-line
+    
   }, [userIndex, setUserIndex]);
 
   // -************************

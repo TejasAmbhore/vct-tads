@@ -1,15 +1,10 @@
-/* @import url('http://fonts.cdnfonts.com/css/harry-potter'); */
+/* @import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('http://fonts.cdnfonts.com/css/herman-decanus-ah-2'); */
 
-
-/* @import url('http://fonts.cdnfonts.com/css/herman-decanus-ah-2'); */
-
-
-/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
-
-
-/* * {
-  font-family:'Poppins';
-} */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    font-family: 'Poppins';
+}
 
 .house_image {
     width: 100vw;
@@ -28,7 +23,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: transparent;
+    background-color: rgb(91, 48, 8);
     border-radius: 0.5rem;
     cursor: pointer;
     display: flex;
@@ -36,19 +31,21 @@
     align-items: center;
     font-size: 1rem;
     font-weight: 400;
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    border: 2px solid rgb(91, 48, 8);
+    border: 2px solid white;
     color: #fff;
-    background-image: linear-gradient(45deg, rgb(91, 48, 8) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, white 50%, rgb(91, 48, 8) 50%);
     background-position: 100%;
     background-size: 400%;
     transition: background 300ms ease-in-out;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 .modal_button:hover {
     background-position: 0;
+    color: rgb(91, 48, 8);
+    border: 2px solid rgb(91, 48, 8);
 }
 
 .button_vct {
@@ -70,7 +67,7 @@
     align-items: center;
     font-size: 1rem;
     font-weight: 400;
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     border: 2px solid rgb(91, 48, 8);
     color: #fff;
@@ -78,7 +75,7 @@
     background-position: 100%;
     background-size: 400%;
     transition: background 300ms ease-in-out;
-    margin-top: 25%;
+    margin-top: 8%;
 }
 
 .button_vct:hover {
@@ -101,12 +98,12 @@
 
 .vct_details {
     position: absolute;
-    margin-top: 28%;
+    top: 60%;
     margin-left: 30.5%;
 }
 
 .user_details h1 {
-    /* font-family: 'Harry Potter', 'Poppins'; */
+    font-family: 'Harry Potter', 'Poppins';
     color: #000;
     font-size: 50px;
 }
@@ -118,7 +115,7 @@
 }
 
 .letsgo_vct {
-    /* font-family: 'Harry Potter', 'Poppins'; */
+    font-family: 'Harry Potter', 'Poppins';
     color: #000;
     font-size: 2em;
     position: absolute;
@@ -127,8 +124,8 @@
 }
 
 .user_details h1 span {
-    /* font-family: 'Herman Decanus Light AH', 'Poppins'; */
-    /* font-family: 'Herman Decanus AH', 'Poppins'; */
+    font-family: 'Herman Decanus Light AH', 'Poppins';
+    font-family: 'Herman Decanus AH', 'Poppins';
     color: #000;
 }
 

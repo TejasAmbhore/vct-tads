@@ -78,11 +78,10 @@ export default function AppNewsUpdate() {
 
       <Typography className="text-center mb-5" style={{ fontWeight: "700", fontSize: "30px" }}>The Virtual Cycle Trip</Typography>
       <Typography className="text-center my-2" style={{ padding: "20px", fontWeight: "600", fontSize: "26px" }} >
-        Every Year Technology Adventure Society, IIT Kharagpur organised a Cycle trip for Freshers to get familiar within the campus and bond among themselves. Due to the drastic circumstances, we can’t meet you on campus.
-        <br />
-        But No worries. We have organised a virtual Cycle trip in the form of a treasure hunt to give you the virtual magical tour of the campus.
+        Every year Technology Adventure Society, IIT Kharagpur organises a Cycle Trip for the Freshers to get familiar with different places in the campus. To make sure that you guys don't miss on the experience this year, we have organised a Virtual Cycle Trip in the form of a Treasure Hunt to give you a virtual magical tour of the campus and win some exciting prizes along the way.
 
       </Typography>
+
 
     </RootStyle>
   );

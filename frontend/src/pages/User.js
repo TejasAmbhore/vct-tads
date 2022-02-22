@@ -63,7 +63,7 @@ export default function User() {
   return (
     <>
       <div style={{
-        backgroundImage: "url('https://github.com/TAdS-VCT/Media/blob/main/BG%20images/harrypotterbg.png?raw=true')",
+        backgroundImage: "url('https://raw.githubusercontent.com/TAdS-VCT/Media/main/BG%20images/Profilebg.jpg')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         // backgroundPosition: 'center',

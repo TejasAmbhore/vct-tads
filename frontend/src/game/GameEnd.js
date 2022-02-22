@@ -4,6 +4,10 @@ import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'
 
 export default function GameEnd() {
+  useEffect(() => {
+    document.title = "TAdS || VCT"
+  }, [])
+
   const { width, height } = useWindowSize()
   return (
     <div style={{ padding: 0 }}>

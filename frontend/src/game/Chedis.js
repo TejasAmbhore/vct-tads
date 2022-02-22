@@ -26,7 +26,9 @@ export default function Chedis() {
   }
   useEffect(() => {
     userdeatils();
+    document.title="TAdS || VCT"
     // eslint-disable-next-line
+    
   }, [userIndex, setUserIndex]);
 
   // -************************
@@ -113,10 +115,10 @@ export default function Chedis() {
       </div>
       <LazyLoad>
         <div className="xyz1">
-          <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/cold_drinks.png?raw=true"} alt="hii" className='vectors chedis1' onClick={handlecorrect} aria-hidden="true" />
-          <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/scroll.png?raw=true"} alt="hii" className=' chedis2' onClick={handlewrong3} aria-hidden="true" />
-          <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/poster.png?raw=true"} alt="hii" className='vectors chedis3' onClick={handlewrong5} aria-hidden="true" />
-          <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/glaass.png?raw=true"} alt="hii" className='vectors chedis4' onClick={handlecorrect} aria-hidden="true" />
+          {/* <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/cold_drinks.png?raw=true"} alt="hii" className='vectors chedis1' onClick={handlecorrect} aria-hidden="true" /> */}
+          <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/scroll.png?raw=true"} alt="hii" className=' chedis2' onClick={handlewrong2} aria-hidden="true" />
+          <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/poster.png?raw=true"} alt="hii" className='vectors chedis3' onClick={handlecorrect} aria-hidden="true" />
+          <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Chedis/glaass.png?raw=true"} alt="hii" className='vectors chedis4' onClick={handlewrong4} aria-hidden="true" />
           {/* <img src={v1} alt="hii" className='vectors chedis5' onClick={handlewrong1} aria-hidden="true" /> */}
           <ToastContainer />
         </div>

@@ -62,9 +62,16 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
         }
       }}
     >
-      <Box sx={{ px: 2.5, py: 3 }}>
+      {/* <Box sx={{ px: 2.5, py: 3 }}>
         <Box component={RouterLink} to="/" sx={{ display: 'inline-flex' }}>
           <Logo />
+        </Box>
+      </Box> */}
+      <Box sx={{ px: 2.5, py: 3 }}>
+        <Box sx={{ display: 'inline-flex' }}>
+          <a href="https://tads.site" target="_blank" rel="noopener noreferrer">
+            <Logo />
+          </a>
         </Box>
       </Box>
 

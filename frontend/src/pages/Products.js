@@ -51,22 +51,22 @@ export default function EcommerceShop() {
         marginTop: '0px',
         overflow: "hidden"
       }}>
-        <Page title="TAds | VCT" style={{ marginTop: "0", }}>
+       <Page title="TAds || VCT" style={{ marginTop: "0", }}>
           <div className="user_maindiv" >
             {((vctDate) <= (nowVctDate)) ? <div className='vct_details'>
 
+              <button onClick={() => setModalShow(true)} className="modal_button">Instructions</button>
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
               {((userIndex) <= 17) ? <button onClick={handleNavigate} className="button_vct">
-              Let's Go!</button>
-        :
-        <button onClick={() => navigate("/", { replace: true })} className="button_vct">Let's Go!</button>
-       }
-       <button onClick={() => setModalShow(true)} className="modal_button">Instructions</button>
-                        <MyVerticallyCenteredModal
-                          show={modalShow}
-                          onHide={() => setModalShow(false)}
-                        />
+                Let's Go!</button>
+                :
+                <button onClick={() => navigate("/", { replace: true })} className="button_vct">Let's Go!</button>
+              }
             </div>
-              : <div className='letsgo_vct'> Please wait</div>}
+              : <div className='vct_details'> Please wait</div>}
           </div>
         </Page>
       </div>
