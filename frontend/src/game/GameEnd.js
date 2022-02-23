@@ -9,6 +9,10 @@ export default function GameEnd() {
   }, [])
 
   const { width, height } = useWindowSize()
+
+  setTimeout(() => {
+    navigate("/", { replace: true });
+  }, 10000);
   return (
     <div style={{ padding: 0 }}>
       <Confetti

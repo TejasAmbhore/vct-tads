@@ -44,10 +44,10 @@ export default function Router() {
       path: '/dashboard',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" replace /> },
-        { path: 'app', element: <DashboardApp /> },
+        { element: <Navigate to="/dashboard/home" replace /> },
+        { path: 'home', element: <DashboardApp /> },
         { path: 'user', element: <User /> },
-        { path: 'products', element: <Products /> },
+        { path: 'vct', element: <Products /> },
 
       ]
     },

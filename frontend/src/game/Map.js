@@ -28,12 +28,7 @@ export default function Map() {
         const n1 = json.userRiddleIndex;
         setUserIndex(n1);
     }
-    // useEffect(() => {
-    //     userdeatils();
-    //     // setTimeout(() => userdeatils(), 2000);
-    //     // console.log(userIndex)
-    //     // eslint-disable-next-line
-    // }, []);
+   
 
     // -------------------
     const navigate = useNavigate();
@@ -81,14 +76,12 @@ export default function Map() {
     const playBg = () => {
         audio.pause()
         audio.play()
-
         audio.loop = true
     }
 
 
     return (
         <>
-            {/* {loading === false ? ( */}
             <Page title="Map | TAdS-VCT">
                 <ToastContainer />
                 <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/map%20vct%20final.png?raw=true"} alt="hii" className='mapvct' id='mapvct' /></LazyLoad>
@@ -99,7 +92,7 @@ export default function Map() {
                                 <FaChevronCircleLeft color="#000000" onClick={() => navigate("/", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />
                                 <AiFillSound color="#000000" onClick={playBg} aria-hidden="true" style={{ cursor: "pointer", marginLeft: "20px" }} />
                             </h1>
-                            <h1 className="iconBody mx-1 mt-1" >
+                            <h1 className="iconBody mt-1" >
                                 <GiStarKey color="#000000" show={show} onClick={handleShow} style={{ cursor: "pointer" }} />
                             </h1>
                         </div>
@@ -122,23 +115,6 @@ export default function Map() {
                                 </Modal.Body>
                             </Modal>
                         </div>
-                        {/* <div className="container">
-                            <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div className="modal-dialog modal-dialog-centered" role="document">
-                                    <div className="modal-content">
-                                        <div className="modal-header">
-                                            <h5 className="modal-title" id="exampleModalCenterTitle">Here's Your Hint</h5>
-                                        </div>
-                                        <div className="modal-body">
-                                            {`${riddles}`}
-                                        </div>
-                                        <div className="modal-footer">
-                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
 
 
@@ -242,9 +218,6 @@ export default function Map() {
                     </LazyLoad>
                 </div>
             </Page>
-            {/* ) : (
-                <DataLoader /> */}
-            {/* )} */}
         </>
     )
 }
