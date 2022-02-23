@@ -64,7 +64,7 @@ export default function Register() {
           <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
             TAdS create a new user
           </Typography>
-          <img alt="register" src="https://raw.githubusercontent.com/TAdS-VCT/Media/main/BG%20images/register%20vector.png" />
+          <img alt="register" src="https://github.com/TAdS-VCT/Media/blob/main/BG%20images/register%20vector01.png?raw=true" />
         </SectionStyle>
       </MHidden>
 
