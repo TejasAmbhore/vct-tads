@@ -26,7 +26,7 @@ export default function ProfLakeSide() {
   }
   useEffect(() => {
     userdeatils();
-    document.title="TAdS || VCT"
+    document.title = "TAdS || VCT"
 
     // eslint-disable-next-line
   }, [userIndex, setUserIndex]);
@@ -107,12 +107,14 @@ export default function ProfLakeSide() {
 
   return (
     <>
-      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/lakeside%20prof%20colony%20horror%20(2).png?raw=true"} alt="hii" className='pls' /></LazyLoad>
-      <div className='backbutton'>
+      <LazyLoad>
+      <img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images%20dark%20new/lakeside%20prof%20colony%20horror%20(2).jpg?raw=true"} alt="hii" className='pls' /> </LazyLoad>
+       <div className='backbutton'>
         <h1 className="mx-3">
           <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />
         </h1>
       </div>
+   
       <LazyLoad>
         <div className="xyz1">
           {/* <img src={"https://github.com/TAdS-VCT/Media/blob/main/riddles/Professor%20Lake%20Side/bird_sitting%20on%20tree.png?raw=true"} alt="hii" className='vectors pls1' onClick={handlecorrect} aria-hidden="true" /> */}

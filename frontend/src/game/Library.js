@@ -108,7 +108,7 @@ export default function Library() {
 
   return (
     <>
-      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/H%20HHd%20z%20horror%20f.png?raw=true"} alt="hii" className='lib' /></LazyLoad>
+      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images%20dark%20new/H%20HHd%20z%20horror%20f.jpg?raw=true"} alt="hii" className='lib' /></LazyLoad>
       <div className='backbutton'>
         <h1 className="mx-3">
           <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />
