@@ -32,6 +32,9 @@ export default function EcommerceShop() {
 
   const handleNavigate = () => {
     navigate("/game/map", { replace: true });
+     // audio.pause()
+     audio.play()
+     audio.loop = true
   }
   const vctDate = new Date("feb 18, 2022 17:45:00").getTime();
   const nowVctDate = new Date().getTime();

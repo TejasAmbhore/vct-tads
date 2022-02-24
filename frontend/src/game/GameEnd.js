@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './GameEnd.css'
 import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'
