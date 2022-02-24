@@ -6,6 +6,11 @@
     font-family: 'Poppins';
 }
 
+@font-face {
+    font-family: 'HarryPotter';
+    src: url(./hermandec.ttf);
+}
+
 .house_image {
     width: 100vw;
     height: 100vh;
@@ -103,7 +108,7 @@
 }
 
 .user_details h1 {
-    font-family: 'Harry Potter', 'Poppins';
+    font-family: 'HarryPotter';
     color: #000;
     font-size: 50px;
 }
@@ -124,8 +129,9 @@
 }
 
 .user_details h1 span {
-    font-family: 'Herman Decanus Light AH', 'Poppins';
-    font-family: 'Herman Decanus AH', 'Poppins';
+    font-family: 'HarryPotter';
+    /* font-family: 'Herman Decanus Light AH', 'Poppins'; */
+    /* font-family: 'Herman Decanus AH', 'Poppins'; */
     color: #000;
 }
 

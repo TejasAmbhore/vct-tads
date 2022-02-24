@@ -33,7 +33,7 @@ function MyVerticallyCenteredModal(props) {
           5.	To win interesting prizes, complete all of the riddles in the same way, as quickly as possible.<br />
           6.	Make sure you complete the VCT in one sitting. OR the time keeps increasing <br />
           PS: The music starts as you click on the Start button and you are not allowed to stop that <RiGhost2Line /> Refreshing the page stops the music, to play it again, click on the sound icon in the top-left of the screen
-
+          PPS: Click on F11 button for Better Experience<RiGhost2Line />
         </div>
       </Modal.Body>
     </Modal>

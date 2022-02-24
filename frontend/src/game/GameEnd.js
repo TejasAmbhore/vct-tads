@@ -1,18 +1,17 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import './GameEnd.css'
 import Confetti from 'react-confetti'
+import { useNavigate } from 'react-router-dom';
 import useWindowSize from 'react-use/lib/useWindowSize'
 
 export default function GameEnd() {
-  useEffect(() => {
-    document.title = "TAdS || VCT"
-  }, [])
+ 
 
   const { width, height } = useWindowSize()
-
+  const navigate = useNavigate();
   setTimeout(() => {
     navigate("/", { replace: true });
-  }, 10000);
+  }, 7000);
   return (
     <div style={{ padding: 0 }}>
       <Confetti
@@ -23,9 +22,8 @@ export default function GameEnd() {
         <img src="https://raw.githubusercontent.com/TAdS-VCT/Media/main/BG%20images/Fireplace2.jpeg" alt="end" className="fireplace" />
         <div className="text_endgame">
           <h1>Voila!</h1>
-          <h1> You just had a tour of the entire IIT KGP campus! Results will be released soon...</h1>
+          <h1>The Hogwarts Express has covered all the stops and it's time to say Goodbye. Hope to see you soon in campus and explore all the places in real life.</h1>
         </div>
-
       </div>
       {/*  <section class="contact">
     <div class="content-contact">
