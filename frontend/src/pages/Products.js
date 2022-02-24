@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 // import { Container, Typography } from '@mui/material';
 import Page from '../components/Page';
 import './User.css'
+import Sound from './theme.mp3'
 import MyVerticallyCenteredModal from './Modal.js'
 
 export default function EcommerceShop() {
@@ -29,12 +30,12 @@ export default function EcommerceShop() {
     userdeatils();
     // eslint-disable-next-line
   }, [userIndex, setUserIndex]);
-
+  let audio = new Audio(Sound)
   const handleNavigate = () => {
     navigate("/game/map", { replace: true });
-     // audio.pause()
-     audio.play()
-     audio.loop = true
+    // audio.pause()
+    audio.play()
+    audio.loop = true
   }
   const vctDate = new Date("feb 18, 2022 17:45:00").getTime();
   const nowVctDate = new Date().getTime();
@@ -54,7 +55,7 @@ export default function EcommerceShop() {
         marginTop: '0px',
         overflow: "hidden"
       }}>
-       <Page title="TAds || VCT" style={{ marginTop: "0", }}>
+        <Page title="TAds || VCT" style={{ marginTop: "0", }}>
           <div className="user_maindiv" >
             {((vctDate) <= (nowVctDate)) ? <div className='vct_details'>
 
